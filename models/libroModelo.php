@@ -1,6 +1,6 @@
 <?php
 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/ProyectoFinalMulti/config/database.php'); 
+require_once ('config/database.php');
 class LibroModelo {
     private $db;
     

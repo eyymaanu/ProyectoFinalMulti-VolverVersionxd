@@ -1,5 +1,5 @@
 <?php
- require_once($_SERVER['DOCUMENT_ROOT'] . '/ProyectoFinalMulti/config/database.php'); // Incluir el archivo Database.php para poder instanciar la conexión
+require_once ('config/database.php');
 class autorModelo {
     private $db;
     public function __construct($dbConnection) {
