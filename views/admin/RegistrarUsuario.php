@@ -397,7 +397,7 @@ body {
         </thead>
         <tbody>
         <?php
-    require_once($_SERVER['DOCUMENT_ROOT'] . '/ProyectoFinalMulti/config/database.php');
+    require_once ('config/database.php');
     $conn = Database::getConnection();
     $sql = "SELECT usu_codigo,usu_nombre, usu_apellido, usu_usuario,usu_correo, usu_telefono, usu_modalidad, usu_curso, usu_cedula FROM usuarios";
     $stmt = $conn->query($sql);
