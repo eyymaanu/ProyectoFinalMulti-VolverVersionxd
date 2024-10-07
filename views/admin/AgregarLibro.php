@@ -351,9 +351,9 @@ ob_start(); // Activar el almacenamiento en búfer de salida
             </thead>
             <tbody>
                                            <?php
-                            require_once('/config/database.php');
+                            require_once('./config/database.php');
                             $conn = Database::getConnection();
-                            $sql = "SELECT lib_codigo, lib_titulo, lib_autor_codigo, lib_categoria, lib_img, lib_cantidad_real, stock_actual FROM Libros";
+                            $sql = "SELECT lib_codigo, lib_titulo, lib_autor_codigo, lib_categoria, lib_img, lib_cantidad_real, stock_actual FROM libros";
                             $stmt = $conn->query($sql);
                             $Libros = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             if (!empty($Libros)) {
