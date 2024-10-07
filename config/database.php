@@ -1,11 +1,8 @@
 <?php
 class Database {
     private static $pdo = null;
-
     private function __construct() {}
-
     public static function getConnection() {
-
         if (self::$pdo === null) {
             $host = 'fra1.clusters.zeabur.com';
             $port = '32491';

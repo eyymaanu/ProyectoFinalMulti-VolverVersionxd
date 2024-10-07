@@ -242,7 +242,7 @@ ob_start(); // Activar el almacenamiento en búfer de salida
         <div class="form-container shadow-lg">
             <h2 class="text-center mb-4">Agregar Nuevo Libro</h2>
             <!-- Formulario para agregar libro con carga de imagen -->
-            <form action="../proyectofinalmulti/controllers/agregarLibroControlador.php" class="formField" method="POST"
+            <form action="./controllers/agregarLibroControlador.php" class="formField" method="POST"
                 enctype="multipart/form-data">
                 <div class="row">
                     <div class="col-md-6 mb-3">
@@ -351,7 +351,7 @@ ob_start(); // Activar el almacenamiento en búfer de salida
             </thead>
             <tbody>
                                            <?php
-                            require_once($_SERVER['DOCUMENT_ROOT'] . '/ProyectoFinalMulti/config/database.php');
+                            require_once('/config/database.php');
                             $conn = Database::getConnection();
                             $sql = "SELECT lib_codigo, lib_titulo, lib_autor_codigo, lib_categoria, lib_img, lib_cantidad_real, stock_actual FROM Libros";
                             $stmt = $conn->query($sql);
