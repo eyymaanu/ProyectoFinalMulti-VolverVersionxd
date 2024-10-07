@@ -1,8 +1,11 @@
 <?php
+ob_start(); // Activar el almacenamiento en búfer de salida
+?>
+<?php
 // Verificar si el usuario es un administrador
 
 if (!isset($_SESSION['usu_role']) || $_SESSION['usu_role'] !== 1) {
-    header("Location: ../proyectofinalmulti/index.php?page=auth/login"); // Redirigir si no es admin
+    header("Location: ./index.php?page=auth/login"); // Redirigir si no es admin
     exit();
 }
 
@@ -560,3 +563,6 @@ document.getElementById('registrationForm').addEventListener('submit', function 
 </html>
 
 
+<?php
+ob_end_flush(); // Enviar el búfer de salida y desactivar el almacenamiento en búfer
+?>

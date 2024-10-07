@@ -1,3 +1,6 @@
+<?php
+ob_start(); // Activar el almacenamiento en búfer de salida
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -443,3 +446,6 @@
 </body>
 
 </html>
+<?php
+ob_end_flush(); // Enviar el búfer de salida y desactivar el almacenamiento en búfer
+?>

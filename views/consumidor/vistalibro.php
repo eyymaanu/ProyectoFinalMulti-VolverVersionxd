@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'] . '/ProyectoFinalMulti/config/database.php'); // Incluir el archivo Database.php
+require_once ('config/database.php');
 
 
 // Conexión a la base de datos

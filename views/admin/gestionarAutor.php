@@ -1,3 +1,6 @@
+<?php
+ob_start(); // Activar el almacenamiento en búfer de salida
+?>
 <?php 
 
 $content = 'base.php'; 
@@ -237,3 +240,6 @@ document.getElementById('autorform').addEventListener('submit', function (e) {
 
 </body>
 </html>
+<?php
+ob_end_flush(); // Enviar el búfer de salida y desactivar el almacenamiento en búfer
+?>

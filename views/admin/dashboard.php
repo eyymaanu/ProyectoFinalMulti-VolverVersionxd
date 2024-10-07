@@ -1,3 +1,6 @@
+<?php
+ob_start(); // Activar el almacenamiento en búfer de salida
+?>
 <?php $content = 'base.php'; ?>
 
 <!DOCTYPE html>
@@ -245,3 +248,6 @@ body {
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </body>
 </html>
+<?php
+ob_end_flush(); // Enviar el búfer de salida y desactivar el almacenamiento en búfer
+?>

@@ -1,7 +1,7 @@
 <?php 
 
 // Conectarse a la base de datos
-require_once($_SERVER['DOCUMENT_ROOT'] . '/ProyectoFinalMulti/config/database.php');
+require_once ('config/database.php');
 
 
 // Crear una instancia de conexión
