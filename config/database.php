@@ -8,11 +8,11 @@ class Database {
 
         if (self::$pdo === null) {
             $host = 'fra1.clusters.zeabur.com';
-            $port = '30250';
+            $port = '32491';
             $charset = 'utf8mb4';
             $db = 'zeabur';
             $user = 'root';
-            $pass = 't8239Fd61fnaVeL0JKkvAE45GbI7HQlo';
+            $pass = 'Su79Zl1gtFWzjV8eCwE0Hh2AR63T5Q4c';
 
             $dsn = "mysql:host=$host;port=$port;dbname=$db;charset=$charset";
 

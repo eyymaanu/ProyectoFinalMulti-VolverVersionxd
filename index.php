@@ -4,7 +4,8 @@ ob_start(); // Iniciar el almacenamiento en búfer de salida
 // session_start(); 
 
 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/ProyectoFinalMulti/config/database.php');
+ 
+require_once ('config/database.php');
 
 $pdo = Database::getConnection();
 
